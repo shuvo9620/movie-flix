@@ -3,6 +3,13 @@ import heroStyles from "@/app/styles/herosection.module.css"
 import styles from "@/app/styles/common.module.css"
 import Link from 'next/link';
 import Image from 'next/image';
+import { Mulish } from 'next/font/google'
+ 
+const mulish = Mulish({
+  weight: ['300','400','500','600','700','800','900'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 
 const HeroSection = ({title, imageUrl}) => {
@@ -14,7 +21,7 @@ const HeroSection = ({title, imageUrl}) => {
                         <h1>{title}</h1>
                         <p>Experience the ultimate movie-watching destination with our Movie Flix website, where captivating stories come to life on your screens.</p>
                         <Link href='/movie'>
-                            <button>
+                            <button className={mulish.className}>
                                 Explore Movies
                             </button>
                         </Link>
