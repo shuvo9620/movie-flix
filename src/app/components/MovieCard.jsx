@@ -9,7 +9,7 @@ const MovieCard = (movieData) => {
         <>
             <div className={styles.card}>
                 <div className={styles.card_image}>
-                    <Image src={movieData.jawSummary.backgroundImage.url} alt={title} width={250} height={200} />
+                    <Image src={movieData.jawSummary.backgroundImage.url} alt={title} width={260} height={200} />
                 </div>
                 <div className={styles.card_data}>
                     <h2>{title.substring(0, 20)}</h2>
