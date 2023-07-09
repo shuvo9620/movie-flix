@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import React from 'react';
+import styles from '@/app/styles/common.module.css'
+import Link from "next/link";
 
-const notFound = () => {
+const NotFound = () => {
     return (
         <section className={styles.container}>
             <div className={styles.error_page}>
@@ -16,6 +16,6 @@ const notFound = () => {
             </div>
         </section>
     );
-};
+}
 
-export default notFound;
+export default NotFound;

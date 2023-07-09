@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import MovieCard from '../components/MovieCard';
 import styles from '@/app/styles/common.module.css'
+import { resolve } from 'styled-jsx/css';
 
 const Movie = async () => {
 
