@@ -1,9 +1,10 @@
 import React from 'react';
+import HeroSection from './components/HeroSection';
 
 const page = () => {
   return (
     <>
-      <h1>Hello next js</h1>
+      <HeroSection></HeroSection>
     </>
   );
 };
